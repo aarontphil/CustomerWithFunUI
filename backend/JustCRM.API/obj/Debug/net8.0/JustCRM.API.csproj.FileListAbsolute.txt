@@ -290,3 +290,4 @@ C:\emsyne\Intern\AngularProject\backend\JustCRM.API\obj\Debug\net8.0\refint\Just
 C:\emsyne\Intern\AngularProject\backend\JustCRM.API\obj\Debug\net8.0\JustCRM.API.pdb
 C:\emsyne\Intern\AngularProject\backend\JustCRM.API\obj\Debug\net8.0\JustCRM.API.genruntimeconfig.cache
 C:\emsyne\Intern\AngularProject\backend\JustCRM.API\obj\Debug\net8.0\ref\JustCRM.API.dll
+C:\emsyne\Intern\AngularProject\backend\JustCRM.API\obj\Debug\net8.0\JustCRM.API.sourcelink.json
