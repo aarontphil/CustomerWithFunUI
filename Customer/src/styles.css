@@ -1,0 +1,253 @@
+@import 'ngx-toastr/toastr';
+
+:root {
+  /* Giru/Y2K Neubrutalist Light Theme (Default) */
+  --bg-color: #faf6ee;
+  --sidebar-bg: #f4eee1;
+  --sidebar-border-line: 1px solid #2d2b2a;
+  --surface-color: #ffffff;
+  --border-color: #2d2b2a;
+  --shadow-color: #2d2b2a;
+  --text-primary: #1a1a1a;
+  --text-secondary: #5c5852;
+
+  --accent-color: #e05353;
+  --accent-hover: #c94242;
+  --accent-subtle: #fdf8f5;
+
+  --success-color: #4f8558;
+  --success-subtle: #eff7f1;
+  --warning-color: #d9943c;
+  --danger-color: #d94545;
+  --danger-subtle: #fdf4f4;
+
+  --bg-gradient:
+    linear-gradient(90deg, #f4eee1 0 280px, transparent 280px),
+    linear-gradient(180deg, #faf6ee, #f5f0e6);
+  --workspace-main-bg: transparent;
+  --header-bg: rgba(250, 246, 238, 0.9);
+  --header-border-color: #2d2b2a;
+
+  --brand-mark-bg: #faf6ee;
+  --brand-mark-color: #e05353;
+  --brand-mark-border: #2d2b2a;
+  --brand-mark-shadow: 2px 2px 0px #2d2b2a;
+
+  --nav-btn-hover-bg: rgba(224, 83, 83, 0.05);
+  --nav-btn-active-bg: rgba(224, 83, 83, 0.1);
+  --nav-btn-active-border-color: #2d2b2a;
+  --nav-svg-bg: rgba(224, 83, 83, 0.08);
+  --nav-svg-color: #e05353;
+  --nav-svg-active-bg: #2d2b2a;
+  --nav-svg-active-color: #faf6ee;
+
+  --card-bg-gradient: #ffffff;
+  --card-border: #2d2b2a;
+  --card-shadow: 3px 3px 0px #2d2b2a;
+  --card-shadow-hover: 6px 6px 0px #2d2b2a;
+  --metric-num-color: #1a1a1a;
+  --metric-label-color: #5c5852;
+  --metric-tag-bg: #f4eee1;
+  --metric-tag-color: #1a1a1a;
+
+  --input-bg: #ffffff;
+  --input-border: #2d2b2a;
+  --input-focus-border: #e05353;
+  --input-focus-shadow: 2px 2px 0px #2d2b2a;
+  --input-placeholder: #a69e96;
+
+  --table-thead-bg: #f4eee1;
+  --table-tr-hover-bg: rgba(224, 83, 83, 0.03);
+  --avatar-border: #2d2b2a;
+
+  --icon-btn-bg: #ffffff;
+  --icon-btn-color: #1a1a1a;
+  --icon-btn-border: #2d2b2a;
+  --icon-btn-hover-bg: #e05353;
+  --icon-btn-hover-border: #2d2b2a;
+  --icon-btn-hover-color: #faf6ee;
+
+  --name-list-bg: #ffffff;
+  --name-list-item-bg: transparent;
+  --name-list-item-hover-bg: rgba(224, 83, 83, 0.05);
+  --name-list-item-active-bg: #faf6ee;
+  --name-list-item-active-color: #e05353;
+
+  --notice-bg: #eff7f1;
+  --notice-border: #2d2b2a;
+  --notice-color: #4f8558;
+
+  --primary-btn-bg: #e05353;
+  --primary-btn-color: #ffffff;
+  --primary-btn-border: #2d2b2a;
+  --primary-btn-shadow: 3px 3px 0px #2d2b2a;
+
+  --secondary-btn-bg: #ffffff;
+  --secondary-btn-color: #1a1a1a;
+  --secondary-btn-border: #2d2b2a;
+  --secondary-btn-hover-bg: #f4eee1;
+  --secondary-btn-hover-color: #1a1a1a;
+  --secondary-btn-hover-border: #2d2b2a;
+
+  --camera-overlay-bg: rgba(26, 26, 26, 0.65);
+  --camera-modal-bg: #faf6ee;
+  --camera-modal-border: #2d2b2a;
+
+  --theme-toggle-btn-bg: #ffffff;
+  --theme-toggle-btn-color: #1a1a1a;
+  --theme-toggle-btn-border: #2d2b2a;
+  --theme-toggle-btn-hover-bg: #f4eee1;
+  --theme-toggle-btn-hover-color: #e05353;
+
+  --body-bg-pattern:
+    linear-gradient(90deg, rgba(26, 26, 26, 0.015) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(26, 26, 26, 0.015) 1px, transparent 1px), #faf6ee;
+  --body-bg-size: 40px 40px;
+}
+
+body.dark-theme {
+  /* Neubrutalist Dark Theme Overrides */
+  --bg-color: #181716;
+  --sidebar-bg: #242220;
+  --sidebar-border-line: 1.5px solid #f3f1ed;
+  --surface-color: #242220;
+  --border-color: #f3f1ed;
+  --shadow-color: #f3f1ed;
+  --text-primary: #f3f1ed;
+  --text-secondary: #a8a29e;
+
+  --accent-color: #fa7070;
+  --accent-hover: #ff8888;
+  --accent-subtle: #2d1e1c;
+
+  --success-color: #82c48e;
+  --success-subtle: rgba(130, 196, 142, 0.1);
+  --warning-color: #f59e0b;
+  --danger-color: #fa7070;
+  --danger-subtle: rgba(250, 112, 112, 0.1);
+
+  --bg-gradient:
+    linear-gradient(90deg, #242220 0 280px, transparent 280px),
+    linear-gradient(180deg, #181716, #141312);
+  --workspace-main-bg: transparent;
+  --header-bg: rgba(36, 34, 32, 0.9);
+  --header-border-color: #f3f1ed;
+
+  --brand-mark-bg: #181716;
+  --brand-mark-color: #fa7070;
+  --brand-mark-border: #f3f1ed;
+  --brand-mark-shadow: 3px 3px 0px #f3f1ed;
+
+  --nav-btn-hover-bg: rgba(250, 112, 112, 0.08);
+  --nav-btn-active-bg: rgba(250, 112, 112, 0.1);
+  --nav-btn-active-border-color: #f3f1ed;
+  --nav-svg-bg: rgba(250, 112, 112, 0.08);
+  --nav-svg-color: #fa7070;
+  --nav-svg-active-bg: #f3f1ed;
+  --nav-svg-active-color: #181716;
+
+  --card-bg-gradient: #242220;
+  --card-border: #f3f1ed;
+  --card-shadow: 4px 4px 0px #f3f1ed;
+  --card-shadow-hover: 8px 8px 0px #f3f1ed;
+  --metric-num-color: #f3f1ed;
+  --metric-label-color: #a8a29e;
+  --metric-tag-bg: #181716;
+  --metric-tag-color: #fa7070;
+
+  --input-bg: #181716;
+  --input-border: #f3f1ed;
+  --input-focus-border: #fa7070;
+  --input-focus-shadow: 3px 3px 0px #f3f1ed;
+  --input-placeholder: #6b6661;
+
+  --table-thead-bg: #181716;
+  --table-tr-hover-bg: rgba(250, 112, 112, 0.03);
+  --avatar-border: #f3f1ed;
+
+  --icon-btn-bg: #181716;
+  --icon-btn-color: #f3f1ed;
+  --icon-btn-border: #f3f1ed;
+  --icon-btn-hover-bg: #fa7070;
+  --icon-btn-hover-border: #f3f1ed;
+  --icon-btn-hover-color: #181716;
+
+  --name-list-bg: #242220;
+  --name-list-item-bg: transparent;
+  --name-list-item-hover-bg: rgba(250, 112, 112, 0.05);
+  --name-list-item-active-bg: #181716;
+  --name-list-item-active-color: #fa7070;
+
+  --notice-bg: rgba(130, 196, 142, 0.1);
+  --notice-border: #f3f1ed;
+  --notice-color: #82c48e;
+
+  --primary-btn-bg: #fa7070;
+  --primary-btn-color: #181716;
+  --primary-btn-border: #f3f1ed;
+  --primary-btn-shadow: 4px 4px 0px #f3f1ed;
+
+  --secondary-btn-bg: #242220;
+  --secondary-btn-color: #f3f1ed;
+  --secondary-btn-border: #f3f1ed;
+  --secondary-btn-hover-bg: #181716;
+  --secondary-btn-hover-color: #f3f1ed;
+  --secondary-btn-hover-border: #f3f1ed;
+
+  --camera-overlay-bg: rgba(24, 23, 22, 0.85);
+  --camera-modal-bg: #242220;
+  --camera-modal-border: #f3f1ed;
+
+  --theme-toggle-btn-bg: #242220;
+  --theme-toggle-btn-color: #f3f1ed;
+  --theme-toggle-btn-border: #f3f1ed;
+  --theme-toggle-btn-hover-bg: #181716;
+  --theme-toggle-btn-hover-color: #fa7070;
+
+  --body-bg-pattern:
+    linear-gradient(90deg, rgba(243, 241, 237, 0.02) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(243, 241, 237, 0.02) 1px, transparent 1px), #181716;
+  --body-bg-size: 40px 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  color: var(--text-primary);
+  font-family:
+    'Space Grotesk',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: var(--body-bg-pattern);
+  background-size: var(--body-bg-size);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+svg {
+  display: block;
+}
